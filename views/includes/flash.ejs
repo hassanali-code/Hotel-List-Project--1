@@ -1,0 +1,35 @@
+
+<!-- is tenplate ma jo message flash krwana ha  uska template bnaye ga -->
+
+<!-- <h1> flash message for success</h1> -->
+  <% if(success && success.length>0){    %> 
+    <!-- taka ya message har jagah display na ho jab new listing create ho tab hi flash ho isi lia condition laga di ka agar success variable create hoa ha or success variable tab create hoga jab koi new listing add hogi  -->
+      <div class="alert alert-success  alert-dismissible fade show col-6 offset-3 " role="alert" >
+        <!-- div ma ya classes bootstrap styling add krna ka lia di ha  -->
+           <%= success %>
+           <!-- bootstrap button to dismis alert -->
+            <button
+             type="button"
+              class="btn-close" 
+              data-bs-dismiss="alert" 
+              aria-label="Close"
+              ></button>
+      </div>
+  <% }  %>
+
+  <!-- ab dekha ga to to phier sa wo green box arha hoga q ka success variabl;e jo ham na res.locals ma bnaya ha wo array chaha usma koi value na bhi ho tab bhi wo exist krta ha so iska lia ham aik or condition lagaye ga ka iska sath success array ki length>0 ho  -->
+
+
+  <!-- jaisa opar success ka lia bnaya ha agar erro agya to uska lia bhi ya design kia ha  -->
+    <% if(error && error.length>0){    %> 
+    <!-- taka ya message har jagah display na ho jab new listing create ho tab hi flash ho isi lia condition laga di ka agar success variable create hoa ha or success variable tab create hoga jab koi new listing add hogi  -->
+      <div class="alert alert-danger  alert-dismissible fade show col-6 offset-3 " role="alert" >
+           <%= error %>
+            <button
+             type="button"
+              class="btn-close" 
+              data-bs-dismiss="alert" 
+              aria-label="Close"
+              ></button>
+      </div>
+  <% }  %>

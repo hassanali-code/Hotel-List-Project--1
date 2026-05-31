@@ -1,0 +1,57 @@
+
+
+<!-- ab yha pa ham lgin page ka lia template bnaye ga  -->
+
+ <% layout("layouts/boilerplate") %>
+
+
+
+  <div class="row mt-3">
+    <h1  class="col-6 offset-3">Login on Wanderlust</h1>
+    <!-- username -->
+   <div class="col-6 offset-3">
+     <form action="/login" method="POST" class="needs-validation" novalidate>
+        <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text"
+         name="username" 
+          class="form-control" 
+          id="username"
+          required
+          /> 
+    
+        <div class="valid-feedback">looks good!</div>
+        <div class="invalid-feedback">Tiltle not looks good!</div>
+      </div>
+
+      <!-- email  section-->
+        <!-- <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input
+         type="email"
+         name="email" 
+         class="form-control" 
+         id="email"
+         required
+        /> 
+      </div> -->
+
+      <!-- password -->
+          <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input
+         type="password"
+         name="password" 
+         class="form-control" 
+         id="password"
+         required
+          /> 
+      </div>
+
+      <!-- button to login -->
+       <button class="btn btn-success">Login</button>
+
+     </form>
+
+   </div>
+</div>

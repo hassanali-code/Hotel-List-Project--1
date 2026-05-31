@@ -1,0 +1,18 @@
+
+<!-- yha ham is template m,a error ko acha template ma dekhana ka template create kra ga  -->
+
+
+
+<% layout("layouts/boilerplate") %>
+<!-- or isma ham apna bootstrap alerts ka use kra ga  -->
+ 
+<div class="row">
+    <div class="alert alert-danger" col-6 offset-3 role="alert">
+        <!-- danger symbol svg -->
+          <!-- <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg> -->
+      <!-- jab error aye ga to ya messaeh show hoga -->
+       <h4 class="alert-heading"> <%= err.message %> </h4>
+       <!-- //pora error information ko dekhan ha  -->
+       <!-- <p> < %= err.stack %> </p>  -->
+    </div>
+</div>
