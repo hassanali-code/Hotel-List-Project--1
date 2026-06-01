@@ -138,6 +138,7 @@ app.use("/listings/:id/reviews", reviewRoutes);
 // using user routes
 app.use("/", userRoutes);
 
+app.get("/", (req, res) => { res.redirect("/listings"); });
 
 
 
